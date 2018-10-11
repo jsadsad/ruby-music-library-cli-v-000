@@ -1,7 +1,9 @@
 module Concerns::Persistable
   module ClassMethods
     def reset_all
-      self.class.all.clear
+      self.all.clear
+    end
+    def 
       
   end
   module InstanceMethods
