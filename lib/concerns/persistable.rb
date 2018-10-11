@@ -2,5 +2,6 @@ module Concerns::Persistable
   module ClassMethods
   end
   module InstanceMethods
-    def
+    def save
+      self.class.
 end
