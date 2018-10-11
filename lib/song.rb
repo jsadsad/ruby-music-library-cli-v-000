@@ -1,4 +1,5 @@
 class Song
+  extend Concerns::Findable
   extend Persistable::ClassMethods
   extend Nameable::ClassMethods
   
