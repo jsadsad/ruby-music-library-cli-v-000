@@ -15,14 +15,6 @@ class Genre
     @@all
   end
 
-  def self.destroy_all
-    all.clear
-  end
-
-  def self.create(name)
-    new(name).tap{ |g| g.save }
-  end
-
   def artists
     songs.collect{ |s| s.artist }.uniq
   end
