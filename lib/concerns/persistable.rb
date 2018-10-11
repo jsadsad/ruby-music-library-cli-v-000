@@ -2,7 +2,8 @@ module Persistable
   
   module ClassMethods
     def self.extended(base)
-      base.class_instance_variable_set(:@@all,)
+      base.class_instance_variable_set(:@@all,[])
+    end
     
     def reset_all
       self.all.clear
