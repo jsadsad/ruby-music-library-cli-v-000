@@ -18,10 +18,6 @@ class Genre
     all.clear
   end
 
-  def save
-    self.class.all << self
-  end
-
   def self.create(name)
     new(name).tap{ |g| g.save }
   end
