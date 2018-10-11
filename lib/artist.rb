@@ -17,10 +17,6 @@ class Artist
     @@all
   end
   
-  # def self.destroy_all
-  #   all.clear
-  # end
-  
   def add_song(song)
     song.artist = self unless song.artist
     songs << song unless songs.include?(song)
