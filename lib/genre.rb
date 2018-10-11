@@ -1,5 +1,6 @@
 class Genre
   extend Concerns::Findable
+  include Persistable::InstanceMethods
   attr_accessor :name
   attr_reader :songs
 
