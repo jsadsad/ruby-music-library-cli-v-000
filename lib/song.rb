@@ -26,14 +26,6 @@ class Song
     @@all
   end
   
-  def self.destroy_all
-    all.clear
-  end
-  
-  def self.create(name)
-    new(name).tap{ |x| x.save }
-  end
-  
   def self.find_by_name(name)
     all.detect{ |x| x.name == name }
   end
