@@ -1,5 +1,5 @@
 class Song
-  extend Persistable::
+  extend Persistable::ClassMethods
   
   attr_accessor :name
   attr_reader :artist, :genre
