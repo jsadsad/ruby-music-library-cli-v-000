@@ -15,9 +15,9 @@ class Artist
     @@all
   end
   
-  def self.create(name)
-    new(name).tap{|x| x.save}
-  end
+  # def self.create(name)
+  #   new(name).tap{|x| x.save}
+  # end
   
   def self.destroy_all
     all.clear
