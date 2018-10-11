@@ -1,10 +1,10 @@
 class Genre
   extend Concerns::Findable
+  extend Persistable::ClassMethods
   include Persistable::InstanceMethods
+  
   attr_accessor :name
   attr_reader :songs
-
-  @@all = []
 
   def initialize(name)
     @name = name
