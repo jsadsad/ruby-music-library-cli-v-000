@@ -2,7 +2,7 @@ module Persistable
   
   module ClassMethods
     def self.extended(base)
-      
+      base.class
     
     def reset_all
       self.all.clear
