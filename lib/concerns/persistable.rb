@@ -5,7 +5,7 @@ module Persistable
       base.class_variable_set(:@@all, [])
     end
     
-    def reset_all
+    def destroy
       self.all.clear
     end
     
