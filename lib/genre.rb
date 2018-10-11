@@ -1,6 +1,7 @@
 class Genre
   extend Concerns::Findable
   extend Persistable::ClassMethods
+  extend Nameable::ClassMethods
   include Persistable::InstanceMethods
   
   attr_accessor :name
