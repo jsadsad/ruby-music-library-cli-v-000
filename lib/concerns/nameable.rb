@@ -1,6 +1,7 @@
 module Nameable
   module ClassMethods
-    def crea
+    def create(name)
+      
   end
   
   module InstanceMethods
