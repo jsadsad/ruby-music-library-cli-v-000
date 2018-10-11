@@ -1,4 +1,5 @@
 module Nameable
+  
   module ClassMethods
     def create(name)
       new(name).tap{|x| x.save}
@@ -7,4 +8,5 @@ module Nameable
   
   module InstanceMethods
   end
+  
 end
